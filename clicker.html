@@ -8,10 +8,23 @@ p{color:burlywood;}
 body{color:darkorange;}
 </style>
 </head>
+    
 <body>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Small_apple_pie_8.jpg ">
+    <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/6/61/Small_apple_pie_8.jpg ">
    
-    <p>Hello</p>
-    hi
+    <p id="score">score =</p>
+    
+    <img id ="upgrade" src= "https://as1.ftcdn.net/v2/jpg/01/70/45/94/1000_F_170459416_bU3U0mMWJyqq1ml6o08x2b4SpgY68Lza.jpg">
 </body>
 </html>
+<script>
+    var score=0
+    document.getElementById("image").addEventListener("click",imageClick)
+    function imageClick(){
+        score = score + 1
+        document.getElementById("score").innerText= "score = " + score
+    }
+    function upgrade(){
+            addEventlistener
+    }
+</script>
